@@ -1,15 +1,17 @@
 #!/bin/bash
-curl -O http://planet.openstreetmap.org/replication/day/000/000/$1.osc.gz
-gzip -d $1.osc.gz
-./osmconvert $1.osc > $1.05m
+url=$1
+curl -O $url
+length=$(expr ${#url} - 10)
+name=${url:$length:3}
+gzip -d $name.osc.gz
+./osmconvert $name.osc > $name.05m
 users=(Rub21 ediyes RichRico Luis36995 dannykath andygol shravan91 ruthmaben abel801 samely calfarome srividya_c PlaneMad)
 for i in ${users[*]}
 do
-    ./osmfilter $1.osc --keep="@user=$i" -o=$i.osm
-    echo $users
+    ./osmfilter $name.osc --keep="@user=$i" -o=$i.osm
 done
-rm $1.05m
-rm $1.osc
+rm $name.05m
+rm $name.osc
 s=".osm "
 r="$( printf "${s}%s" "${users[@]}" )"
 r="${r:${#s}}"
