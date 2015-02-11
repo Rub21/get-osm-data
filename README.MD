@@ -1,4 +1,23 @@
-## INSTALAR
+# processing-osm-history
+Allows to create a file from os user.
 
-`sudo apt-get install lib32z1 lib32ncurses5 lib32bz2-1.0`
-http://askubuntu.com/questions/297151/how-to-run-32-bit-programs-on-a-64-bit-system
+## How to install:
+
+`git clone https://github.com/Rub21/processing-osm-history.git`
+`cd processing-osm-history`
+
+In necessary to install
+
+- [Curl](http://curl.haxx.se/download.html)
+
+on directory `processing-osm-history`
+
+- [Osmfilter](http://wiki.openstreetmap.org/wiki/Osmfilter)
+- [Osmconvert](http://wiki.openstreetmap.org/wiki/Osmconvert)
+
+# How to Execute
+
+get file from `http://planet.osm.org/replication/day/000/000/`
+
+`./editions.sh http://planet.osm.org/replication/day/000/000/882.osc.gz`
+
