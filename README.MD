@@ -26,4 +26,4 @@ Get file from : http://planet.osm.org/replication/day/000/000/
 
 ### Get a zip file
 
-You will get the file named `edition-team.zip` in the directory processing-osm-history
+You will get the file named `edition-team.zip` on directory `processing-osm-history`.
