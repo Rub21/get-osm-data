@@ -15,4 +15,5 @@ rm $name.osc
 s=".osm "
 r="$( printf "${s}%s" "${users[@]}" )"
 r="${r:${#s}}"
+zip -r edition-team.zip ${r}.osm
 eval "java -Xmx1024M -DproxyHost=$PROXY -DproxyPort=8080 -jar josm.jar ${r}.osm"
