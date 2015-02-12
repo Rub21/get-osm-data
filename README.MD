@@ -5,6 +5,7 @@ Allows to create a file of OSM from each user on data-team.
 ### How to install:
 
 `git clone https://github.com/Rub21/processing-osm-history.git`
+
 `cd processing-osm-history`
 
 In necessary to install
@@ -14,6 +15,7 @@ In necessary to install
 on directory `processing-osm-history`
 
 - [Osmfilter](http://wiki.openstreetmap.org/wiki/Osmfilter)
+
 - [Osmconvert](http://wiki.openstreetmap.org/wiki/Osmconvert)
 
 ### How to Execute
