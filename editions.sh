@@ -8,7 +8,7 @@ gzip -d $name.osc.gz
 users=(Rub21 ediyes RichRico Luis36995 dannykath andygol shravan91 ruthmaben abel801 samely calfarome srividya_c PlaneMad)
 for i in ${users[*]}
 do
-    ./osmfilter $name.osc --keep="@user=$i" -o=$i.osm
+    ./osmfilter $name.osc --keep="@user=$i" -o=$name-$i.osm
 done
 rm $name.05m
 rm $name.osc
