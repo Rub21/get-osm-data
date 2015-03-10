@@ -11,6 +11,7 @@ do
     if (($i>=100)); then
         curl $url$i.osc.gz -o "$i.osc.gz"
     fi
+    gzip -d $i.osc.gz
     ./osmconvert $i.osc > $i.05m
 	users=(Rub21 ediyes RichRico Luis36995 dannykath andygol shravan91 ruthmaben abel801 samely calfarome srividya_c PlaneMad)
 	for j in ${users[*]}
