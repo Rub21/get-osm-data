@@ -12,13 +12,13 @@ do
         curl $url$i.osc.gz -o "$i.osc.gz"
     fi
     gzip -d $i.osc.gz
-    ./osmconvert $i.osc > $i.05m
+    #./osmconvert $i.osc > $i.05m
 	users=(Rub21 ediyes RichRico Luis36995 dannykath andygol shravan91 ruthmaben abel801 samely calfarome srividya_c PlaneMad)
 	for j in ${users[*]}
 	do
-	    ./osmfilter $i.05m --keep="@user=$i" -o=$i-$j.osm
+	    ./osmfilter $i.osc --keep="@user=$i" -o=$i-$j.osm
 	done
-	rm $i.05m
+	#rm $i.05m
 	rm $i.osc
 done
 s=".osm "
