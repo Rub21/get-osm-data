@@ -2,8 +2,6 @@
 
 Allows to create a file of OSM from each osm user.
 
-### How to Run:
-
 `git clone https://github.com/Rub21/processing-osm-history.git`
 
 `cd processing-osm-history`
