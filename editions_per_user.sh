@@ -21,6 +21,7 @@ do
         ./osmfilter $i.osc --keep="@user=$j" -o=$i-$j.osm
     done
     zip $i.zip *.osm
+    #rm *.osm
+    #rm *.osc
 done
-rm *.osm
-rm *.osc
+
