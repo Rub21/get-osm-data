@@ -14,7 +14,7 @@ do
     gzip -d $i.osc.gz
     #./osmconvert $i.osc > $i.05m
     echo "Processing.. $i"
-    ./osmfilter $i.osc --keep="@user=Rub21 or @user=ediyes or @user=Luis36995 or @user=RichRico or @user=dannykath or @user=andygol or @user=shravan91 or @user=ruthmaben or @user=abel801 or @user=calfarome or @user=samely or @user=srivya_c or @user=PlaneMad" -o=process-$i.osm
+    ./osmfilter $i.osc --keep="@user=shashi1 or @user=Bhanu or @user=Nikhil04 or @user=shiva05 or @user=yadhi06 or @user=srikanth07 or @user=naresh08 or @user=ashok09 or @user=venkatesh10 or @user=maheshrkm or @user=udaykanth or @user=Pallavi or @user=PremKumar or @user=saberkhan or @user=saikumar or @user=thrinath or @user=pavankalyanreddy or @user=rajeshvaaari or @user=vamshikrishna or @user=himalay or @user=vudemraju or @user=anushap or @user=rajashekar or @user=sdivya or @user=pvprasad or @user=praveeng or @user=pawankumard or @user=jasvinderkaur or @user=bindhu or @user=himabindhu or @user=shekarn or @user=harisha or @user=sowjanyaaa or @user=anithakumari or @user=Navaneetha or @user=arjun or @user=sekhar or @user=Kushwanth or @user=shalinins or @user=apreethi or @user=anthony1 or @user=shaheenbegum or @user=smallikarjuna or @user=sampathreddy or @user=tinkle or @user=saikumard or @user=Harishkonda or @user=Pravalika01 or @user=Raju or @user=Nagaraju or @user=LakshmiC" -o=process-$i.osm
 	rm $i.osc
 done
 s=".osm "

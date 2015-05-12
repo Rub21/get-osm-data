@@ -5,7 +5,7 @@ length=$(expr ${#url} - 10)
 name=${url:$length:3}
 gzip -d $name.osc.gz
 ./osmconvert $name.osc > $name.05m
-users=(Rub21 ediyes RichRico Luis36995 dannykath andygol shravan91 ruthmaben abel801 samely calfarome srividya_c PlaneMad)
+users=(Rub21 ediyes RichRico Luis36995 dannykath andygol shravan91 ruthmaben abel801 samely calfarome srividya_c PlaneMad karitotp)
 for i in ${users[*]}
 do
     ./osmfilter $name.osc --keep="@user=$i" -o=$name-$i.osm

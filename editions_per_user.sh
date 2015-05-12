@@ -1,6 +1,6 @@
 #!/bin/bash
 url="http://planet.osm.org/replication/day/000/000/"
-users=(Rub21 ediyes RichRico Luis36995 dannykath andygol shravan91 ruthmaben abel801 samely calfarome srividya_c PlaneMad)
+users=(Rub21 ediyes RichRico Luis36995 dannykath andygol shravan91 ruthmaben abel801 samely calfarome srividya_c PlaneMad karitotp)
 
 for i in $(seq $1 $2)
 do	
@@ -21,7 +21,7 @@ do
         ./osmfilter $i.osc --keep="@user=$j" -o=$i-$j.osm
     done
     zip $i.zip *.osm
-    #rm *.osm
-    #rm *.osc
+    rm *.osm
+    rm *.osc
 done
 
