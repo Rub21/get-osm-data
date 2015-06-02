@@ -5,7 +5,7 @@ length=$(expr ${#url} - 10)
 name=${url:$length:3}
 gzip -d $name.osc.gz
 ./osmconvert $name.osc > $name.05m
-users=(Rub21 ediyes RichRico Luis36995 dannykath andygol shravan91 ruthmaben abel801 samely calfarome srividya_c PlaneMad karitotp)
+users=(Rub21 ediyes RichRico Luis36995 dannykath andygol shravan91 ruthmaben abel801 samely calfarome srividya_c PlaneMad karitotp lxbarth geohacker shvrm)
 for i in ${users[*]}
 do
     ./osmfilter $name.osc --keep="@user=$i" -o=$name-$i.osm
@@ -16,4 +16,3 @@ s=".osm "
 r="$( printf "${s}%s" "${users[@]}" )"
 r="${r:${#s}}"
 zip -r edition-team.zip ${r}.osm
-eval "java -Xmx1024M -DproxyHost=$PROXY -DproxyPort=8080 -jar josm.jar ${r}.osm"

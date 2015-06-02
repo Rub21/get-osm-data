@@ -1,6 +1,6 @@
 #!/bin/bash
 url="http://planet.osm.org/replication/day/000/000/"
-users=(Rub21 ediyes RichRico Luis36995 dannykath andygol shravan91 ruthmaben abel801 samely calfarome srividya_c PlaneMad karitotp)
+users=(Rub21 ediyes RichRico Luis36995 dannykath andygol shravan91 ruthmaben abel801 samely calfarome srividya_c PlaneMad karitotp lxbarth geohacker shvrm)
 
 for i in $(seq $1 $2)
 do	
